@@ -5,25 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="script.js"></script>
+    
     <title>Mini-Projeto</title>
 </head>
 <body>
-    <main>
-        <div class="timer">
+    <main id="container">
+        <div class="time">
+            <p>Escolha o tempo do pomodoro</p>
             <button type="button" class="btn selectTimer" onclick="selectTimer25()" id="25-5">25-5</button>
             <button type="button" onclick="selectTimer50()" class="btn selectTimer" id="50-10">50-10</button>
         </div>
         <div class="difficulty">
+            <p>Selecione um grau de dificuldade</p>
             <button id="beginner"type="button" class="btn difficulty" onclick="selectBeginner()">beginner</button>
             <button id="intermediate"type="button" class="btn difficulty" onclick="selectIntermediate()">intermediate</button>
             <button id="expert"type="button" class="btn difficulty" onclick="selectExpert()">expert</button>
-            
         </div>
-        
-        <button type="submit" onclick="start()" class="btn">Começar</button>
+        <button id="startButton">Iniciar o tempo</button>
+        <button id="stopButton" style="display: none;">Parar o tempo</button>
 
-        
-    </main>
+        <div id="timer"></div>
+    </main> 
+    <script src="script.js"></script>
 </body>
 </html>

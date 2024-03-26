@@ -1,19 +1,10 @@
+let time = ''
 
 function selectTimer25(){
-    let timer25 = document.getElementById('25-5')
-    let timer50 = document.getElementById('50-10')
-
-    timer25.classList.add('selected')
-    timer50.classList.remove('selected')
-    
+    time = '25-5'
 }
 function selectTimer50(){
-    let timer25 = document.getElementById('25-5')
-    let timer50 = document.getElementById('50-10')
-
-    timer25.classList.remove('selected')
-    timer50.classList.add('selected')
-
+    time = '50-10'
 }
 
 function selectBeginner(){
@@ -26,6 +17,7 @@ function selectBeginner(){
     expert.classList.remove('selected')
     return
 }
+
 function selectIntermediate(){
     let beginner = document.getElementById('beginner')
     let intermediate = document.getElementById('intermediate')
@@ -36,6 +28,7 @@ function selectIntermediate(){
     expert.classList.remove('selected')
     return
 }
+
 function selectExpert(){
     let beginner = document.getElementById('beginner')
     let intermediate = document.getElementById('intermediate')
@@ -47,22 +40,76 @@ function selectExpert(){
     return      
 }
 
-function start(){
-    let configs = document.querySelectorAll('.selected')
-    
-    let pomodoroType = configs[0].innerText
-    let difficulty = configs[1].innerText
+let timeInterval;
+let startTime;
+let timeRunning = false;
 
-    console.log(difficulty)
-    console.log(pomodoroType)
-    // getExercises(difficulty)
-    // getTimer(pomodoroType)
+const startButton = document.getElementById('startButton');
+const stopButton = document.getElementById('stopButton');
+const timeStatus = document.getElementById('timeStatus');
+const timerDisplay = document.getElementById('timer');
+
+startButton.addEventListener('click', start);
+stopButton.addEventListener('click', stop);
+
+function start(){
+    timeRunning = true;
+    startButton.style.display = 'none';
+    stopButton.style.display = 'block';
+    startTime = new Date().getTime();
+    timeInterval = setInterval(updateTimer, 1000);
 }
+
+function updateTimer() {
+    const currentTime = new Date().getTime();
+    const elapsedTime = currentTime - startTime;
+    const elapsedMinutes = Math.floor(elapsedTime / (1000 * 60));
+    
+    let minutes = 0
+    let seconds = 0
+
+    if (time === '25-5'){
+        minutes = 0 - elapsedMinutes;
+        seconds = 60 - Math.floor((elapsedTime % (1000 * 60)) / 1000);
+    }else if (time ==='50-10'){
+         minutes = 49 - elapsedMinutes;
+         seconds = 60 - Math.floor((elapsedTime % (1000 * 60)) / 1000);
+    } else {
+         alert('Favor selecionar o tempo')
+    }
+  
+    timerDisplay.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+    
+    if (minutes < 0) {
+        // stop();
+        if (time === '25-5'){
+            minutes = 5 - elapsedMinutes;
+            seconds = 60 - Math.floor((elapsedTime % (1000 * 60)) / 1000);
+        } else {
+            minutes = 10 - elapsedMinutes;
+            seconds = 60 - Math.floor((elapsedTime % (1000 * 60)) / 1000);
+        }
+        timerDisplay.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+        if (minutes < 0) {
+            start()
+        }
+    }
+}
+
+function stop() {
+   if (timeRunning) {
+      clearInterval(timeInterval);
+      timeRunning = false;
+      startButton.style.display = 'block';
+      stopButton.style.display = 'none';
+      timerDisplay.textContent = '';
+    }
+  }
 
 function getExercises(difficulty){
 
 }
 
-function getTimer(pomodoroType) {
-    
+function getTimer(pomodoroType){
+
 }

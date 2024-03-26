@@ -1,0 +1,50 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(191, 229, 217);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(191, 229, 217);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    color: white;
+    background-color: cadetblue;
+    border-radius: 5px;
+    width: 15vw;
+    height: 30px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#timer {
+    background-color: brown;
+    font-size: 80px;
+    color: white;
+    background-image: url(/mini-projeto/imagem-pomodoro.jpg);
+    border-radius: 8px;
+    background-size: cover; 
+    background-position: center;
+    width: 50%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
