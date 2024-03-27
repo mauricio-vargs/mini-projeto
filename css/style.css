@@ -1,0 +1,5 @@
+/*.activity {
+    visibility: hidden; /visible => o elemento permanece ocupando espaço
+    visibility: none; /block => invisível e não ocupa espaço! 
+}
+*/
