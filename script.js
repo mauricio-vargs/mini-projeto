@@ -164,7 +164,7 @@ function exibirExercicio(){
 function pegarExercicio(){
     fetch("https://api.api-ninjas.com/v1/exercises?type=stretching&difficulty=" + difficulty + "&offset=" + offset,{
         method: 'GET',
-        headers: { 'X-Api-Key': '2czyWzvcUDlSdS+xe/5G3A==v56LbXISGo1cpaAG'},
+        headers: { 'X-Api-Key': ''},
         contentType: 'application/json',
     })
     .then(response => response.json())
