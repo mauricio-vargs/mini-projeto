@@ -10,6 +10,7 @@
 </head>
 <body>
     <main id="container">
+        <div id="timer"></div>
         <div class="time">
             <p>Escolha o tempo do pomodoro</p>
             <button type="button" class="btn selectTimer" onclick="selectTimer25()" id="25-5">25-5</button>
@@ -23,8 +24,14 @@
         </div>
         <button id="startButton">Iniciar o tempo</button>
         <button id="stopButton" style="display: none;">Parar o tempo</button>
+        <button id="changeExercicio"  style="display: none;">Mudar Exercício</button>
+        
+        <div id="mostraExercicio">
+            <h1 id="nomeExercicio"></h1>
+            <h3 id="dificuldadeExercicio"></h3>
+            <span id="descricaoExercicio"></span>
+        </div>
 
-        <div id="timer"></div>
     </main> 
     <script src="script.js"></script>
 </body>
