@@ -1,5 +1,65 @@
-/*.activity {
-    visibility: hidden; /visible => o elemento permanece ocupando espaço
-    visibility: none; /block => invisível e não ocupa espaço! 
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(191, 229, 217);
 }
-*/
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(191, 229, 217);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    color: white;
+    background-color: cadetblue;
+    border-radius: 5px;
+    width: 15vw;
+    height: 40px;
+    width: 200px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+  
+button:active {
+    background-color: #060a07;
+}
+
+#changeExercicio {
+    position: absolute;
+    bottom: 150px;
+    right: 150px;
+    
+}
+
+
+h1 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+h1 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}

@@ -1,35 +1,49 @@
 <!DOCTYPE html>
 <html lang="ptbr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="Css darlene.css">
+
     <title>Mini-Projeto</title>
 </head>
+
 <body>
-    <main>
-        <div class="timer">
+    <main id="container">
+        <div id="timer"></div>
+        <div class="time">
+            <p>Escolha o tempo do pomodoro</p>
             <button type="button" class="btn selectTimer" onclick="selectTimer25()" id="25-5">25-5</button>
             <button type="button" onclick="selectTimer50()" class="btn selectTimer" id="50-10">50-10</button>
         </div>
         <div class="difficulty">
-            <button id="beginner"type="button" class="btn difficulty" onclick="selectBeginner()">beginner</button>
-            <button id="intermediate"type="button" class="btn difficulty" onclick="selectIntermediate()">intermediate</button>
-            <button id="expert"type="button" class="btn difficulty" onclick="selectExpert()">expert</button>
-            
+            <p>Selecione um grau de dificuldade</p>
+            <button id="beginner" type="button" class="btn difficulty" onclick="selectBeginner()">beginner</button>
+            <button id="intermediate" type="button" class="btn difficulty"
+                onclick="selectIntermediate()">intermediate</button>
+            <button id="expert" type="button" class="btn difficulty" onclick="selectExpert()">expert</button>
         </div>
-        
-        <button type="submit" onclick="start()" class="btn">Começar</button>
 
-        <h1>POMODORO SEGUNDA PÁGINA</h1>
+        <button id="startButton">Iniciar o tempo</button>
+        <button id="stopButton" style="display: none;">Parar o tempo</button>
 
-    <div class="activity">
-        <button id="btn-obter" onclick="getExercises()">OBTER ALONGAMENTO</button>
-        <button id="btn-trocar" onclick="exerciseChange()">PRÓXIMO</button>
-    </div>
-    <script src="script.js"></script>
     </main>
+
+    <button id="changeExercicio" style="display: none;">Obter/ Mudar Exercício</button>
+
+    
+        
+        <div id="mostraExercicio">
+            <h1 id="nomeExercicio"></h1>
+            <h2 id="grupoMuscular"></h2>
+            <h3 id="equipamento"></h3>
+            <span id="descricaoExercicio"></span>
+        </div>
+   
+
+    <script src="SCRIPT DARLENE FULL.js"></script>
 </body>
+
 </html>
