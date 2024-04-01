@@ -1,49 +1,52 @@
 <!DOCTYPE html>
-<html lang="ptbr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="Css darlene.css">
-
-    <title>Mini-Projeto</title>
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <main id="container">
-        <div id="timer"></div>
-        <div class="time">
-            <p>Escolha o tempo do pomodoro</p>
-            <button type="button" class="btn selectTimer" onclick="selectTimer25()" id="25-5">25-5</button>
-            <button type="button" onclick="selectTimer50()" class="btn selectTimer" id="50-10">50-10</button>
-        </div>
-        <div class="difficulty">
-            <p>Selecione um grau de dificuldade</p>
-            <button id="beginner" type="button" class="btn difficulty" onclick="selectBeginner()">beginner</button>
-            <button id="intermediate" type="button" class="btn difficulty"
-                onclick="selectIntermediate()">intermediate</button>
-            <button id="expert" type="button" class="btn difficulty" onclick="selectExpert()">expert</button>
-        </div>
+    <main>
 
-        <button id="startButton">Iniciar o tempo</button>
-        <button id="stopButton" style="display: none;">Parar o tempo</button>
+        <div class="timer">
 
+        </div>
+        <div class="actions">
+
+            <div class="pomodoro">
+                <p>Selecione o tipo de pomodoro:</p>
+                <button type="button" class="btn selectTimer" onclick="selectTimer25()" id="25-5">25-5</button>
+                <button type="button" onclick="selectTimer50()" class="btn selectTimer" id="50-10">50-10</button>
+            </div>
+            <div class="difficulty">
+                <p>Selecione a dificuldade dos exercícios:</p>
+                <button id="beginner" type="button" class="btn difficulty" onclick="selectBeginner()">beginner</button>
+                <button id="intermediate" type="button" class="btn difficulty"
+                    onclick="selectIntermediate()">intermediate</button>
+            </div>
+
+            <button type="button" onclick="start()" class="btn">começar</button>
+        </div>
     </main>
+    <button type="button" onclick="stop()" class="btn stopButton hidden">parar</button>
+    <div id="mostraExercicio" class="hidden">
+        <h1 id="nomeExercicio"></h1>
+        <h2 id="grupoMuscular"></h2>
+        <h3 id="equipamento"></h3>
+        <span id="descricaoExercicio"></span>
+        <button class="btn" onclick="startExercicio()">next exercise</button>
+    </div>
 
-    <button id="changeExercicio" style="display: none;">Obter/ Mudar Exercício</button>
 
-    
-        
-        <div id="mostraExercicio">
-            <h1 id="nomeExercicio"></h1>
-            <h2 id="grupoMuscular"></h2>
-            <h3 id="equipamento"></h3>
-            <span id="descricaoExercicio"></span>
-        </div>
-   
-
-    <script src="SCRIPT DARLENE FULL.js"></script>
 </body>
 
 </html>

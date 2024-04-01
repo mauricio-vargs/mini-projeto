@@ -1,23 +1,28 @@
-
 body {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(191, 229, 217);
-}
 
-#container {
+    background-color: rgb(191, 229, 217);
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+/*Adição da main aqui para centralizar o parar e controlar melhor os botões*/
+main {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(191, 229, 217);
+
+}
+/*Acrescentado para utilizar ao máximo o espaço dentro da main, para espaçamentos de seus elementos*/
+.actions {
     height: 100%;
     width: 100%;
-    margin: 0;
-    
 }
 
 p {
@@ -25,7 +30,7 @@ p {
     font-weight: bold;
 }
 
-button {
+.btn {
     color: white;
     background-color: cadetblue;
     border-radius: 5px;
@@ -36,21 +41,29 @@ button {
     margin-right: 10px;
     border: none;
     cursor: pointer;
+    margin: 10px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
-button:hover {
+.btn:hover {
     background-color: #45a049;
 }
-  
-button:active {
+
+.btn:active {
     background-color: #060a07;
+}
+
+.selected {
+    background-color: #45a049;
 }
 
 #changeExercicio {
     position: absolute;
     bottom: 150px;
     right: 150px;
-    
+    display: none;
+
 }
 
 
@@ -59,7 +72,60 @@ h1 {
     margin-bottom: 5px;
 }
 
-h1 {
-    font-weight: bold;
+.timer {
+    font-size: 80px;
+    color: white;
+    border-Radius: 8px;
+    width: 50%;
+    height: 30%;
+    display: flex;
+    justify-Content: center;
+    align-items: center;
+
+}
+
+#mostraExercicio {
+    background-color: white;
+    border-radius: 8px;
+    width: 40%;
+    height: 50%;
+    justify-Content: center;
+    align-Items: center;
+    flex-direction: column;
+    padding: 20px;
+
+}
+/*inserido para espaçar elementos da div dos exercícios*/
+#nomeExercicio,
+#grupoMuscular,
+#equipamento {
+    margin-top: 5px;
     margin-bottom: 5px;
+}
+
+#descricaoExercicio {
+    word-wrap: break-word;
+    text-align: justify;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    line-height: 1.1;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: flex;
+    justify-Content: center;
+    align-Items: center;
+    flex-direction: column;
+    padding: 20px
+}
+
+/*Adicionado para inserir margens apenas*/
+.pomodoro p,
+.difficulty p {
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
