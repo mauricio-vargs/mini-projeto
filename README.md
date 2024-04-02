@@ -1,19 +1,3 @@
-<<<<<<< HEAD
-Pomodoro com Exercícios de Alongamento
-
-Este projeto tem por finalidade criar um Pomodoro que divide o tempo em períodos selecionados pelo usuário 
-para organizar o tempo de trabalho e um tempo para alongamento. Ao final do temporizador, o programa 
-apresenta exercícios de alongamento sorteados para proporcionar uma pausa ativa. 
-Durante o período destinado para o descanso, o usuário poderá mudar os exercícios quantas vezes desejar até que 
-o tempo de descanso termine.
-
-Os arquivos do projeto são organizados desse maneira:
-- index.html: arquivo html que executa o programa
-- script.js: arquivo javaScript com as funcionalidades
-- reset.css: conjunto de estilos para "redefinir" ou "zerar" as configurações padrão do navegador
-- style.css: define o estilo da página html
-
-=======
 Este projeto tem por finalidade criar um Pomodoro que divide o tempo em períodos selecionados pelo usuário 
 para organizar o tempo de trabalho e um tempo para alongamento. Ao final do temporizador, o programa 
 apresenta exercícios de alongamento sorteados para proporcionar uma pausa ativa. 
@@ -53,4 +37,3 @@ Funções do do mini-projeto contido no arquivo script.js
   formam apresentados 10 incrementa 10 na variável offset para pegar mais 10 exercícios diferentes
 
   - function exibirExercicio() - captura os elementos da página html para apresentar os exercícios que foi pego na função pegarExercicio() no API Ninjas e mostra o botão Next exercise
->>>>>>> 9f1aa5391b588be0dfb884cd3ee70006c9f2a353
