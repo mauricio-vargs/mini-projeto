@@ -90,9 +90,9 @@ function createTimer(){
    }
 
     if(pomodoroType === '25'){
-        startTimer(display, 5)
+        startTimer(display, 1500)
     } else if(pomodoroType === '50'){      
-        startTimer(display, 5)
+        startTimer(display, 3000)
     }
 
 }
@@ -118,9 +118,9 @@ function startTimer(display, duration) {
         if(timer < 0){
             pegarExercicio()
             if(pomodoroType === '25'){
-                startExerciseTimer(display, 5)
+                startExerciseTimer(display, 300)
             }else if(pomodoroType === '50'){
-                startExerciseTimer(display, 5)
+                startExerciseTimer(display, 600)
             }
             clearInterval(intervalPomodoro)
         }
