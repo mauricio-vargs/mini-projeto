@@ -1,15 +1,10 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> 9f1aa5391b588be0dfb884cd3ee70006c9f2a353
 body {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
-
     background-color: rgb(191, 229, 217);
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
@@ -28,9 +23,7 @@ main {
 .actions {
     height: 100%;
     width: 100%;
-=======
-    background-color: rgb(191, 229, 217);
->>>>>>> 9f1aa5391b588be0dfb884cd3ee70006c9f2a353
+
 }
 
 p {
@@ -50,32 +43,21 @@ p {
     border: none;
     cursor: pointer;
     margin: 10px;
-<<<<<<< HEAD
     font-size: 14px;
     font-weight: bold;
-=======
->>>>>>> 9f1aa5391b588be0dfb884cd3ee70006c9f2a353
+
 }
 
 .btn:hover {
     background-color: #45a049;
 }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 9f1aa5391b588be0dfb884cd3ee70006c9f2a353
 .btn:active {
     background-color: #060a07;
 }
 
-<<<<<<< HEAD
 .selected {
     background-color: #45a049;
-=======
-.selected{
-    background-color:#45a049;
->>>>>>> 9f1aa5391b588be0dfb884cd3ee70006c9f2a353
 }
 
 #changeExercicio {
@@ -83,11 +65,7 @@ p {
     bottom: 150px;
     right: 150px;
     display: none;
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> 9f1aa5391b588be0dfb884cd3ee70006c9f2a353
 }
 
 
@@ -98,7 +76,6 @@ h1 {
 
 .timer {
     font-size: 80px;
-<<<<<<< HEAD
     color: white;
     border-Radius: 8px;
     width: 50%;
@@ -134,14 +111,7 @@ h1 {
     margin-top: 8px;
     margin-bottom: 5px;
     line-height: 1.1;
-=======
-    color :white;
-    border-Radius :8px;
-    width : 50%;
-    height :30%;
-    display :flex;
-    justify-Content :center;
-    align-items :center;
+
 }
 
 #mostraExercicio {
@@ -153,7 +123,7 @@ h1 {
     align-Items : center;
     flex-direction: column;
     padding : 20px
->>>>>>> 9f1aa5391b588be0dfb884cd3ee70006c9f2a353
+
 }
 
 .hidden {
@@ -161,7 +131,7 @@ h1 {
 }
 
 .show {
-<<<<<<< HEAD
+
     display: flex;
     justify-Content: center;
     align-Items: center;
@@ -174,11 +144,4 @@ h1 {
 .difficulty p {
     margin-bottom: 15px;
     margin-top: 15px;
-=======
-    display : flex;
-    justify-Content : center;
-    align-Items : center;
-    flex-direction: column;
-    padding : 20px
->>>>>>> 9f1aa5391b588be0dfb884cd3ee70006c9f2a353
 }

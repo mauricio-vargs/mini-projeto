@@ -90,15 +90,11 @@ function createTimer(){
    }
 
     if(pomodoroType === '25'){
-<<<<<<< HEAD
+
         startTimer(display, 1500)
     } else if(pomodoroType === '50'){      
         startTimer(display, 3000)
-=======
-        startTimer(display, 5)
-    } else if(pomodoroType === '50'){      
-        startTimer(display, 5)
->>>>>>> 9f1aa5391b588be0dfb884cd3ee70006c9f2a353
+
     }
 
 }
@@ -124,15 +120,11 @@ function startTimer(display, duration) {
         if(timer < 0){
             pegarExercicio()
             if(pomodoroType === '25'){
-<<<<<<< HEAD
+
                 startExerciseTimer(display, 300)
             }else if(pomodoroType === '50'){
                 startExerciseTimer(display, 600)
-=======
-                startExerciseTimer(display, 5)
-            }else if(pomodoroType === '50'){
-                startExerciseTimer(display, 5)
->>>>>>> 9f1aa5391b588be0dfb884cd3ee70006c9f2a353
+
             }
             clearInterval(intervalPomodoro)
         }
